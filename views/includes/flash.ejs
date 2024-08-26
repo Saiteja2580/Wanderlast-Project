@@ -1,0 +1,23 @@
+<% if (sucMsg && sucMsg.length) { %>
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3">
+  <%= sucMsg %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+
+<% } %> <% if (delMsg && delMsg.length) { %>
+<div class="alert alert-danger alert-dismissible fade show col-6 offset-3">
+  <%= delMsg %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+
+<% } %>
