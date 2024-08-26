@@ -1,6 +1,6 @@
 <% layout('./layouts/boilerplate') %>
 <style>
-  img {
+  .preview {
     width: 100px;
     height: 100px;
   }
@@ -41,7 +41,7 @@
           <div class="invalid-feedback">Please enter valid description</div>
         </div>
         <div class="mb-3">
-          <img src="<%= originalUrl %>" alt="" />
+          <img src="<%= originalUrl %>" alt="" class="preview"/>
         </div>
         <div class="mb-3">
           <label for="imageUrl" class="form-label">Upload New Image</label>
