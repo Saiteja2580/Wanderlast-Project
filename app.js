@@ -105,6 +105,10 @@ app.use((req, res, next) => {
 //   res.send(newUser);
 // });
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
 //using exprwss eouter to serve listings
 app.use("/listings", listingsRouter);
 app.use("/listings/:id/reviews", reviewsRouter);
